@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import T5 from "./comp/T5/T5";
 import T6 from "./comp/T6/T6";
 import T7 from "./comp/T7/T7";
+import T8 from "./comp/T8/T8";
 function App(props) {
   console.log(props)
   return (
@@ -22,6 +23,7 @@ function App(props) {
           <Route path="/t5" element={<T5 />}></Route>
           <Route path="/t6" element={<T6 />}></Route>
           <Route path="/t7" element={<T7 />}></Route>
+          <Route path="/t8" element={<T8 />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

@@ -12,6 +12,7 @@ function Navbar() {
     <button className='but2'><NavLink to="/t5">t5</NavLink></button>
     <button className='but2'><NavLink to="/t6">t6</NavLink></button>
     <button className='but2'><NavLink to="/t7">t7</NavLink></button>
+    <button className='but2'><NavLink to="/t8">t8</NavLink></button>
     </div>
   )
 }

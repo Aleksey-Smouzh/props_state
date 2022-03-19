@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 
-export default class T7 extends Component {
+export default class T8 extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       input: "",
-      submit: "", //тут может быть дефолтное имя //
+      items: [],
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -22,7 +22,8 @@ export default class T7 extends Component {
   handleSubmit(event) {
     event.preventDefault(); // привент дефолт это обработчик отправки чтобы страница не презагружальсь
     this.setState({
-      submit: this.state.input,
+      input: this.state.input,
+      items: [...this.state.items, this.state.input], // spred ES6
     });
   }
   render() {
@@ -33,9 +34,13 @@ export default class T7 extends Component {
           {/*обрабатываем событие путем хендел ченчь */}
           <button type="submit">submit </button>
         </form>
-        T7
+        T8
         <h5>Контролируемный интпут:</h5>
-        <h3>{this.state.submit}</h3> {/*далие выводим состояние */}
+        <ul>
+          {this.state.items.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
       </div>
     );
   }

@@ -1,4 +1,9 @@
 import React, { Component } from "react";
+import { Button } from '@mui/material';
+
+
+
+
 
 export default class T8 extends Component {
   constructor(props) {
@@ -33,6 +38,13 @@ export default class T8 extends Component {
           <input value={this.state.input} onChange={this.handleChange}></input>{" "}
           {/*обрабатываем событие путем хендел ченчь */}
           <button type="submit">submit </button>
+          <Button variant="text">Text</Button>
+<Button variant="contained">Contained</Button>
+<Button variant="outlined">Outlined</Button>
+<Button/>
+
+
+
         </form>
         T8
         <h5>Контролируемный интпут:</h5>

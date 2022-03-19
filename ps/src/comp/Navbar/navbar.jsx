@@ -7,8 +7,8 @@ function Navbar() {
     
     <button className='but1'> <NavLink to="/t1">t1</NavLink></button>
     <button className='but2'><NavLink to="/t2">t2</NavLink></button>
-    
-    
+    <button className='but2'><NavLink to="/t3">t3</NavLink></button>
+    <button className='but2'><NavLink to="/t4">t4</NavLink></button>
     
     
     

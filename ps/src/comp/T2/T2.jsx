@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function T2() {
-  return (
-    <div>T2</div>
-  )
+export default class T2 extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       name: "first"   //тут пишут имя  конструктрр 
+    }
+  }
+  render() {
+    
+    return (
+      <div >{this.state.name}</div>  // тут пишется стэет 
+    )
+  }
 }
-
-export default T2

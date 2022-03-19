@@ -1,5 +1,7 @@
 import Navbar from "./comp/Navbar/Navbar";
 import "./App.css";
+import T4 from "./comp/T4/T4";
+import T3 from "./comp/T3/T3";
 import T2 from "./comp/T2/T2";
 import T1 from "./comp/T1/T1";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -13,6 +15,8 @@ function App(props) {
         <Routes>
           <Route path="/t1" element={<T1 state={props.state.veganData}/>}></Route>
           <Route path="/t2" element={<T2 />}></Route>
+          <Route path="/t3" element={<T3 />}></Route>
+          <Route path="/t4" element={<T4 />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

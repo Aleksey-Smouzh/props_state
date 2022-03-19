@@ -9,7 +9,7 @@ function Navbar() {
     <button className='but2'><NavLink to="/t2">t2</NavLink></button>
     <button className='but2'><NavLink to="/t3">t3</NavLink></button>
     <button className='but2'><NavLink to="/t4">t4</NavLink></button>
-    
+    <button className='but2'><NavLink to="/t5">t5</NavLink></button>
     
     
     </div>

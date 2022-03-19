@@ -6,7 +6,8 @@ import T2 from "./comp/T2/T2";
 import T1 from "./comp/T1/T1";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import T5 from "./comp/T5/T5";
-
+import T6 from "./comp/T6/T6";
+import T7 from "./comp/T7/T7";
 function App(props) {
   console.log(props)
   return (
@@ -19,6 +20,8 @@ function App(props) {
           <Route path="/t3" element={<T3 />}></Route>
           <Route path="/t4" element={<T4 />}></Route>
           <Route path="/t5" element={<T5 />}></Route>
+          <Route path="/t6" element={<T6 />}></Route>
+          <Route path="/t7" element={<T7 />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,6 +1,6 @@
 
 import React from 'react'
-import Inp from '../Inp/Inp'
+
 
 function T1(props) {
           
